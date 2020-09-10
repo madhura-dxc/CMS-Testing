@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <style>
+           h1{
+               color: floralwhite;
+           }
+        </style>
+ 
+<div class = "bg">
+<h1>Welcome {{cusUserName}}</h1>
+<br><br><hr/>
+<app-customer-info></app-customer-info>
+<br><br><hr/>
+<button class="btn btn-success" [routerLink]="['/dashboard',{outlets: {'data':['customer-order-history']}}]">Order History</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button  class="btn btn-success" [routerLink]="['/dashboard',{outlets: {'data':['customer-pending-order']}}]">Pending orders</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button  class="btn btn-success" [routerLink]="['/dashboard',{outlets: {'data':['place-order']}}]">Place orders</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <button class="btn btn-success" [routerLink]="['/dashboard',{outlets: {'data':['logout']}}]">Logout</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<button  class="btn btn-success" [routerLink]="['/dashboard',{outlets: {'data':['cancel-order']}}]">Cancel Order</button>
+<router-outlet name='data'></router-outlet>
+</div>
+</body>
+</html>

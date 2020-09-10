@@ -1,0 +1,16 @@
+ body{
+    background-image: url("https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875__480.jpg");
+    height: 950px;
+    width: 1000px;
+    background-repeat:no-repeat;
+    background-size: contain;
+    text-align: center;
+
+} 
+h1{
+    color: floralwhite;
+    text-align: center;
+}
+/*body{
+    background-color: darkseagreen;
+} */

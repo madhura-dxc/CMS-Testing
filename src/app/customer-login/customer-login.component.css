@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+    margin-top: 30px;
+    background-image: url("https://lh3.googleusercontent.com/proxy/GjcvJUCiDEmAeLRnd445v-0hn6cs96D4Py_l-vKocxlSiJCylRsXux9QxdmvUWVI4VNPuo2quUlqHYOi6l4-IkgxCoL-80gtxbG__cKSBhJjjojGKHN0mNM-8EAwx2Sz");
+     height: 950px;
+    width: 1000px; 
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+h3{
+    color: floralwhite;
+    top:100px;
+    bottom: 100px;
+}
+h4{
+    color: floralwhite;
+}

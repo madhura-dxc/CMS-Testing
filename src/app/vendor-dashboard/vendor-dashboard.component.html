@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <app-vendor-info></app-vendor-info>
+<br><br><hr/>
+<button class="btn btn-success" [routerLink]="['/vendor-dashboard',
+{outlets: {'data': ['vendor-order-history']}}]">Order History</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success"  [routerLink]="['/vendor-dashboard',
+{outlets: {'data': ['vendor-pending-history']}}]">Order Pending History</button>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button  class="btn btn-success" [routerLink]="['/vendor-dashboard',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{outlets: {'data': ['vendor-accept-reject']}}]">Accept/Reject</button>
+<router-outlet name='data'></router-outlet>
+    </body>
+</html>
+
+
